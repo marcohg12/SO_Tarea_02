@@ -32,20 +32,20 @@ La biblioteca provee las siguientes operaciones para trabajar con semáforos:
 #### Semaphore *create_semaphore(int counter)
 Recibe un entero, el cual es el valor inicial para el contador del semáforo. La función crea un mutex
 y una variable de condición para el semáforo, además de configurar el contador y asignar memoria dinámica para el semáforo. La función retorna
-un puntero al semáforo. Utilice esta operación para crear un nuevo semáforo.
+un puntero al semáforo. **Utilice esta operación para crear un nuevo semáforo**.
 
 #### void destroy_semaphore(Semaphore *sem)
 Recibe un puntero a un semáforo. La función destruye el mutex y la variable de condición, además de liberar
-la memoria dinámica asignada al semáforo. Utilice esta operación para destruir un semáforo que ya no va a ser utilizado.
+la memoria dinámica asignada al semáforo. **Utilice esta operación para destruir un semáforo que ya no va a ser utilizado**.
 
 #### void wait_semaphore(Semaphore *sem)
 Recibe un puntero a un semáforo. La función verifica si existe espacio para el hilo según el contador. Si el contador es cero, entonces
 bloquea al hilo hasta que se haya liberado un recurso del semáforo. Si el contador no es cero, o el semáforo fue desbloqueado, entonces decrementa el contador y permite
-al hilo acceder al recurso. Utilice esta operación para controlar el acceso de los hilos a una región crítica.
+al hilo acceder al recurso. **Utilice esta operación para controlar el acceso de los hilos a una región crítica**.
 
 #### void signal_semaphore(Semaphore *sem)
 Recibe un puntero a un semáforo. La función incrementa el contador y despierta a un hilo bloqueado para que acceda al recurso (si los hay).
-Utilice esta operación cuando los hilos terminen de trabajar en la región crítica.
+**Utilice esta operación cuando los hilos terminen de trabajar en la región crítica**.
 
 ### Read/Write Lock
 
