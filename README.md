@@ -51,7 +51,7 @@ al hilo acceder al recurso. **Utilice esta operación para controlar el acceso d
 Recibe un puntero a un semáforo. La función incrementa el contador y despierta a un hilo bloqueado para que acceda al recurso (si los hay).
 **Utilice esta operación cuando los hilos terminen de trabajar en la región crítica**.
 
-### Read/Write Lock (#Read/Write-Lock)
+### Read/Write Lock
 
 ## Uso
 
