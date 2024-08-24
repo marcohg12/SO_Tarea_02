@@ -91,9 +91,8 @@ archivos en la misma carpeta de su programa, pues el entorno de desarrollo utili
 
 ## Ejemplos
 
-En el repositorio encontrará tres archivos, cada uno con un ejemplo de uso de una de las estructuras de la biblioteca. Para
-ejecutar los ejemplos deberá descargar los archivos de los ejemplos y los archivos *sync_lib.o* y *sync_lib.h*, además del
-archivo *Makefile*. Todos estos archivos deben estar en una misma carpeta.
+En el repositorio encontrará tres archivos (*barrier_example.c*, *semaphore_example.c*, *rwlock_example.c*), cada uno con un ejemplo de uso de una de las estructuras de la biblioteca. Para ejecutar los ejemplos deberá descargar los archivos de los ejemplos y los archivos *sync_lib.o* y *sync_lib.h*, 
+además del archivo *Makefile*. Todos estos archivos deben estar en una misma carpeta.
 
 Para ejecutar los ejemplos, abra una terminal en la carpeta y use los siguientes comandos para cada ejemplo:
 
@@ -113,4 +112,4 @@ make rwlock_example
 ```
 
 El *Makefile* se encarga de compilar el ejemplo, ejecutar el programa y limpiar los archivos creados tras finalizar la ejecución. Si inspecciona
-este archivo, podrá notar que los ejemplos se compilan de la misma forma en la que se explicó en este archivo.
+este archivo, podrá notar que los ejemplos se compilan de la misma forma en la que se explicó en este *readme*.
