@@ -85,4 +85,29 @@ Cuando haga la compilación, la debe hacer de la siguiente forma:
 gcc -o miPrograma miPrograma.c sync_lib.o
 ```
 
+Si utiliza algún entorno de desarrollo también puede utilizar las rutas de los archivos para configurar el *linker* y el
+compilador para encontrar el encabezado y el archivo objeto de la biblioteca. De este modo no es necesario tener los
+archivos en la misma carpeta de su programa, pues el entorno de desarrollo utiliza las rutas para encontrar los archivos.
+
 ## Ejemplos
+
+En el repositorio encontrará tres archivos, cada uno con un ejemplo de uso de una de las estructuras de la biblioteca. Para
+ejecutar los ejemplos deberá descargar los archivos de los ejemplos y los archivos *sync_lib.o* y *sync_lib.h*, además del
+archivo *Makefile*. Todos estos archivos deben estar en una misma carpeta.
+
+Para ejecutar los ejemplos, abra una terminal en la carpeta y use los siguientes comandos para cada ejemplo:
+
+### Barrera
+```bash
+make barrier_example
+```
+
+### Semáforo
+```bash
+make semaphore_example
+```
+
+### Read/Write Lock
+```bash
+make rwlock_example
+```
