@@ -111,3 +111,6 @@ make semaphore_example
 ```bash
 make rwlock_example
 ```
+
+El *Makefile* se encarga de compilar el ejemplo, ejecutar el programa y limpiar los archivos creados tras finalizar la ejecución. Si inspecciona
+este archivo, podrá notar que los ejemplos se compilan de la misma forma en la que se explicó en este archivo.
