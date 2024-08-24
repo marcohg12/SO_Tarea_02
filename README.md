@@ -6,7 +6,7 @@ Este repositorio contiene la implementación de una biblioteca con herramientas 
 - [Herramientas](#herramientas)
   - [Barrera](#barrera)
   - [Semáforo](#semáforo)
-  - [Read/Write Lock](#read/write-lock)
+  - [Read/Write Lock](#read-write-lock)
 - [Uso](#uso)
 - [Ejemplos](#ejemplos)
 
