@@ -28,7 +28,7 @@ archivo *sync_lib.h*.
 El semáforo es una herramienta que permite bloquear el acceso a regiones críticas a solo cierta cantidad
 de hilos, además de permitir la coordinación entre varios hilos, es decir, un hilo puede utilizar operaciones
 del semáforo de otro hilo. La estructura del semáforo se compone de un contador para controlar la cantidad de
-hilos que acceden a un recurso, un mutex para garantizar que las operaciones del semáforo sean atómicas, y una variable de condición 
+hilos que acceden a un recurso, un mutex para garantizar que las operaciones del semáforo sean accedidas solo por un hilo a la vez, y una variable de condición 
 para poder bloquear y desbloquear hilos del semáforo.
 
 La biblioteca provee las siguientes operaciones para trabajar con semáforos:
