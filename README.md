@@ -4,7 +4,9 @@ Este repositorio contiene la implementación de una biblioteca con herramientas 
 ## Tabla de Contenidos
 - [Requisitos](#Requisitos)
 - [Herramientas](#Herramientas)
+  - [Barrera](#Barrera)
   - [Semáforo](#Semáforo)
+  - [Read/Write Lock](#Read/WriteLock)
 - [Uso](#Uso)
 - [Ejemplos](#Ejemplos)
 
@@ -21,6 +23,7 @@ en el archivo 'sync_lib.c', y los prototipos de funciones y definiciones de estr
 archivo 'sync_lib.h'.
 
 ### Barrera
+
 ### Semáforo
 El semáforo es una herramienta que permite bloquear el acceso a regiones críticas a solo cierta cantidad
 de hilos, además de permitir la coordinación entre varios hilos, es decir, un hilo puede utilizar operaciones
