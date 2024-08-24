@@ -4,7 +4,7 @@ Este repositorio contiene la implementación de una biblioteca con herramientas 
 ## Tabla de Contenidos
 - [Requisitos](#Requisitos)
 - [Herramientas](#Herramientas)
--- [Semáforo](#Semáforo)
+  - [Semáforo](#Semáforo)
 - [Uso](#Uso)
 - [Ejemplos](#Ejemplos)
 
