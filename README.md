@@ -71,23 +71,23 @@ El Read/Write Lock es un mecanismo de sincronización que está diseñado para g
 
 La biblioteca provee las siguientes operaciones para trabajar con Read/Write Lock:
 
-### ReadWriteLock *create_read_write_lock()
+#### ReadWriteLock *create_read_write_lock()
 Esta función crea e inicializa la estructura ReadWriteLock. Asigna memoria para el bloqueo, inicializa el mutex y las variables de condición para lectores y escritores, y configura los contadores de lectores y escritores en 0. Finalmente devuelve un puntero a la estructura ReadWriteLock. **Utilice esta operación para crear y configurar un nuevo ReadWriteLock antes de usarlo**
 
-### void destroy_read_write_lock(ReadWriteLock *rw_lock) 
+#### void destroy_read_write_lock(ReadWriteLock *rw_lock) 
 Esta función destruye el ReadWriteLock. Recibe un puntero a la estructura como parámetro, destruye el mutex y las variables de condición, y libera la memoria asignada para la estructura ReadWriteLock. **Utilice esta operación para liberar los recursos asociados con un ReadWriteLock cuando ya no se necesite**
 
-### void lock_read(ReadWriteLock *rw_lock)
+#### void lock_read(ReadWriteLock *rw_lock)
 Esta función bloquea el acceso de lectura. Recibe un puntero a un ReadWriteLock y, si no hay escritores activos o pendientes, incrementa el contador de lectores activos, permitiendo el acceso de lectura. Si hay escritores, el hilo espera hasta que el acceso sea seguro. **Utilice esta operación para asegurar que múltiples hilos puedan leer un recurso simultáneamente cuando no haya escritores**
 
-### void unlock_read(ReadWriteLock *rw_lock)
+#### void unlock_read(ReadWriteLock *rw_lock)
 Esta función libera el bloqueo de lectura. Recibe un puntero a un ReadWriteLock, decrementa el contador de lectores activos y, si no quedan más lectores y hay escritores pendientes, despierta a un escritor para que pueda continuar. **Utilice esta operación para liberar el acceso de lectura y permitir que otros hilos accedan al recurso**
 
-### void lock_write(ReadWriteLock *rw_lock)
+#### void lock_write(ReadWriteLock *rw_lock)
 Esta función bloquea el acceso de escritura. Recibe un puntero a un ReadWriteLock y si hay lectores o escritores activos, incrementa el contador de escritores pendientes y espera hasta que el recurso esté disponible. Una vez seguro, decrementa los escritores pendientes y aumenta los escritores activos. **Utilice esta operación para obtener un acceso exclusivo de escritura a un recurso compartido**
 
 
-### void unlock_write(ReadWriteLock *rw_lock)
+#### void unlock_write(ReadWriteLock *rw_lock)
 Esta función libera el bloqueo de escritura. Recibe un puntero a un ReadWriteLock, decrementa el contador de escritores activos y, si hay escritores pendientes, despierta a uno. Si no hay escritores pendientes, permite que los lectores accedan al recurso. **Utilice esta operación para liberar el acceso de escritura y permitir que otros hilos accedan al recurso, ya sea leer o escribir**
 
 
