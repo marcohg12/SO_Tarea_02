@@ -23,7 +23,7 @@ en el archivo *sync_lib.c*, y los prototipos de funciones y definiciones de estr
 archivo *sync_lib.h*.
 
 ### Barrera
-La barrera es una herramienta de sincronización, se utiliza en contextos donde hay un contexto de datos en paralelo en el que diferentes subprocesos realizan las mismas operaciones en diferentes subconjuntos de un conjunto de datos global. Lo que diferencia a la barrera de otras herramientas de sincronización, es que esta es utilizada de manera que permite que inicien n cantidad de subprocesos, todos ejecutándose al mismo tiempo, después genera una barrera para que los subprocesos no puedan continuar con su ejecución hasta que todos hayan alcanzado cierto punto de ejecución, en ese momento ya pueden seguir al mismo tiempo sus tareas. 
+La barrera es una herramienta de sincronización, se utiliza en contextos donde hay un contexto de datos en paralelo en el que diferentes subprocesos realizan las mismas operaciones en diferentes subconjuntos de un conjunto de datos global. Lo que diferencia a la barrera de otras herramientas de sincronización, es que esta es utilizada de manera que permite que inicien *n* cantidad de subprocesos, todos ejecutándose al mismo tiempo, después genera una barrera para que los subprocesos no puedan continuar con su ejecución hasta que todos hayan alcanzado cierto punto de ejecución, en ese momento ya pueden seguir al mismo tiempo sus tareas. 
 
 La biblioteca cuenta con las siguientes funciones para trabajar con la barrera:
 
@@ -33,11 +33,11 @@ y una variable de condición para la barrera, además de configurar el contador 
 un puntero a la nueva barrera. **Utilice esta operación para crear una nueva barrera**.
 
 #### void wait_barrier(Barrier *b)
-Recibe un puntero a una barrera. La función disminuye el contador de hilos. Si el contador no ha llegado a cero, el hilo espera en la variable de condición y se libera el mutex. Cuando el contador llega a cero, la función envía una señal a los demás hilos para que puedan continuar con su ejecución.  **Utilice esta operación para asegurarse de que todos los hilos lleguen a un punto específico antes de continuar**.
+Recibe un puntero a una barrera. La función disminuye el contador de hilos. Si el contador no ha llegado a cero, el hilo espera en la variable de condición. Cuando el contador llega a cero, la función envía una señal a los demás hilos para que puedan continuar con su ejecución y se libera el mutex. **Utilice esta operación para asegurarse de que todos los hilos lleguen a un punto específico antes de continuar**.
 
 #### void destroy_barrier(Barrier *b)
 Recibe un puntero a una barrera. La función destruye el mutex y la variable de condición, además de liberar
-la memoria dinámica asignada a la barrera. **Utilice esta operación para destruir una barrera que ya no va a ser utilizado**.
+la memoria dinámica asignada a la barrera. **Utilice esta operación para destruir una barrera que ya no va a ser utilizada**.
 
 ### Semáforo
 El semáforo es una herramienta que permite bloquear el acceso a regiones críticas a solo cierta cantidad
