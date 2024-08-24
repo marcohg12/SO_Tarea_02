@@ -67,6 +67,7 @@ Recibe un puntero a un semáforo. La función incrementa el contador y despierta
 **Utilice esta operación para liberar un recurso del semáforo tras terminar la región crítica**.
 
 ### Read/Write Lock
+El Read/Write Lock es un mecanismo de sincronización que está diseñado para gestionar el acceso concurrente a un recurso compartido en entornos de prograación multihilo. Este tipo de bloqueo optimiza el rendimiento al permitir que múltiples hilos accedan simultáneamente al recurso en modo lectura, siempre y cuando no haya hilos realizando escrituras. Sin embargo, cuando un hlo necesita escribir en el recurso, el ReadWrite Lock asegura que ningún otro hilo pueda leer ni escribir hasta que la operación de escritura se complete. La estructura del Read/Write Lock se compone de un mutex para proteger el acceso de variables compartidas, dos variables de condición para coordinar la espera de lectores y escritores, y tres contadores que llevan un registro del número de lectores y escritores activos, así como del número de escritores que están esperando para acceder al recurso.
 
 ## Uso
 
