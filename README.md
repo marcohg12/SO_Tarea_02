@@ -45,11 +45,11 @@ la memoria dinámica asignada al semáforo. **Utilice esta operación para destr
 #### void wait_semaphore(Semaphore *sem)
 Recibe un puntero a un semáforo. La función verifica si existe espacio para el hilo según el contador. Si el contador es cero, entonces
 bloquea al hilo hasta que se haya liberado un recurso del semáforo. Si el contador no es cero, o el semáforo fue desbloqueado, entonces decrementa el contador y permite
-al hilo acceder al recurso. **Utilice esta operación para controlar el acceso de los hilos a una región crítica**.
+al hilo acceder al recurso. **Utilice esta operación para pedir acceso a un recurso del semáforo antes de ingresar a una región crítica**.
 
 #### void signal_semaphore(Semaphore *sem)
 Recibe un puntero a un semáforo. La función incrementa el contador y despierta a un hilo bloqueado para que acceda al recurso (si los hay).
-**Utilice esta operación cuando los hilos terminen de trabajar en la región crítica**.
+**Utilice esta operación para liberar un recurso del semáforo tras terminar la región crítica**.
 
 ### Read/Write Lock
 
