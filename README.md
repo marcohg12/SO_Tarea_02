@@ -19,8 +19,8 @@ Para utilizar la biblioteca se deben cumplir los siguientes requisitos:
 ## Herramientas
 La biblioteca permite trabajar con tres herramientas clásicas para la sincronización de hilos, las cuales
 son la barrera, el semáforo y el read/write lock. Las implementaciones de las tres herramientas se encuentran
-en el archivo 'sync_lib.c', y los prototipos de funciones y definiciones de estructuras se encuentran en el
-archivo 'sync_lib.h'.
+en el archivo *sync_lib.c*, y los prototipos de funciones y definiciones de estructuras se encuentran en el
+archivo *sync_lib.h*.
 
 ### Barrera
 
