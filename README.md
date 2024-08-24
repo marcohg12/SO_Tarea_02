@@ -2,10 +2,10 @@
 Este repositorio contiene la implementación de una biblioteca de sincronización de hilos en C.
 
 ## Tabla de Contenidos
-- [Requisitos] (##Requisitos)
-- [Herramientas] (##Herramientas)
-- [Uso] (##Uso)
-- [Ejemplos] (##Ejemplos)
+- [Requisitos] (#Requisitos)
+- [Herramientas] (#Herramientas)
+- [Uso] (#Uso)
+- [Ejemplos] (#Ejemplos)
 
 ## Requisitos
 Para utilizar la biblioteca se deben cumplir los siguientes requisitos:
