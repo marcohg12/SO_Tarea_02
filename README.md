@@ -2,13 +2,13 @@
 Este repositorio contiene la implementación de una biblioteca con herramientas para la sincronización de hilos en C.
 
 ## Tabla de Contenidos
-- [Requisitos](#Requisitos)
-- [Herramientas](#Herramientas)
-  - [Barrera](#Barrera)
-  - [Semáforo](#Semáforo)
-  - [Read/Write Lock](#Read/Write-Lock)
-- [Uso](#Uso)
-- [Ejemplos](#Ejemplos)
+- [Requisitos](#requisitos)
+- [Herramientas](#herramientas)
+  - [Barrera](#barrera)
+  - [Semáforo](#semáforo)
+  - [Read/Write Lock](#read/write-lock)
+- [Uso](#uso)
+- [Ejemplos](#ejemplos)
 
 ## Requisitos
 Para utilizar la biblioteca se deben cumplir los siguientes requisitos:
