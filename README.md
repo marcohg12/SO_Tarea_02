@@ -71,4 +71,16 @@ El Read/Write Lock es un mecanismo de sincronización que está diseñado para g
 
 ## Uso
 
+Para usar la biblioteca, debe descargar los archivos *sync_lib.o* y *sync_lib.h* de este repositorio. Cuando haga su programa,
+debe incluir los archivos descargados en la misma carpeta donde vaya a compilar su programa. Además, debe incluir el encabezado
+de la biblioteca en los archivos donde la vaya a usar de la siguiente forma:
+
+```c
+"sync_lib.h"
+```
+
+Cuando haga la compilación, ladebe hacer de la siguiente forma:
+
+gcc -o miPrograma miPrograma.c sync_lib.o
+
 ## Ejemplos
