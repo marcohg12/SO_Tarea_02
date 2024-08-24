@@ -75,7 +75,7 @@ La biblioteca provee las siguientes operaciones para trabajar con Read/Write Loc
 Esta función crea e inicializa la estructura ReadWriteLock. Asigna memoria para el bloqueo, inicializa el mutex y las variables de condición para lectores y escritores, y configura los contadores de lectores y escritores en 0. Finalmente devuelve un puntero a la estructura ReadWriteLock. **Utilice esta operación para crear y configurar un nuevo ReadWriteLock antes de usarlo**
 
 ### void destroy_read_write_lock(ReadWriteLock *rw_lock) 
-Esta función destruye el ReadWriteLock. Recibe un puntero a la estructura como parámetro, destruye el mutex y las variables de condición, y libera la memoria asignada para la estructura ReadWriteLock **Utilice esta operación para liberar los recursos asociados con un ReadWriteLock cuando ya no se necesite**
+Esta función destruye el ReadWriteLock. Recibe un puntero a la estructura como parámetro, destruye el mutex y las variables de condición, y libera la memoria asignada para la estructura ReadWriteLock. **Utilice esta operación para liberar los recursos asociados con un ReadWriteLock cuando ya no se necesite**
 
 ### void lock_read(ReadWriteLock *rw_lock)
 Esta función bloquea el acceso de lectura. Recibe un puntero a un ReadWriteLock y, si no hay escritores activos o pendientes, incrementa el contador de lectores activos, permitiendo el acceso de lectura. Si hay escritores, el hilo espera hasta que el acceso sea seguro. **Utilice esta operación para asegurar que múltiples hilos puedan leer un recurso simultáneamente cuando no haya escritores**
