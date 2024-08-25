@@ -93,7 +93,7 @@ Esta función libera el bloqueo de escritura. Recibe un puntero a un ReadWriteLo
 
 ## Uso
 
-Para usar la biblioteca debe descargar los archivos *sync_lib.o* y *sync_lib.h* de este repositorio. Cuando haga su programa,
+Para usar la biblioteca debe descargar los archivos [sync_lib.o](sync_lib.o) y *sync_lib.h* de este repositorio. Cuando haga su programa,
 debe incluir los archivos descargados en la misma carpeta donde vaya a compilar su programa. Además, debe incluir el encabezado
 de la biblioteca en los archivos donde la vaya a usar de la siguiente forma:
 
