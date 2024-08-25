@@ -19,8 +19,8 @@ Para utilizar la biblioteca se deben cumplir los siguientes requisitos:
 ## Herramientas
 La biblioteca permite trabajar con tres herramientas clásicas para la sincronización de hilos, las cuales
 son la barrera, el semáforo y el read/write lock. Las implementaciones de las tres herramientas se encuentran
-en el archivo *sync_lib.c*, y los prototipos de funciones y definiciones de estructuras se encuentran en el
-archivo *sync_lib.h*.
+en el archivo [sync_lib.c](sync_lib.c), y los prototipos de funciones y definiciones de estructuras se encuentran en el
+archivo [sync_lib.h](sync_lib.h).
 
 ### Barrera
 La barrera es una herramienta de sincronización, se utiliza en contextos donde hay un contexto de datos en paralelo en el que diferentes subprocesos realizan las mismas operaciones en diferentes subconjuntos de un conjunto de datos global. Lo que diferencia a la barrera de otras herramientas de sincronización, es que esta es utilizada de manera que permite que inicien *n* cantidad de subprocesos, todos ejecutándose al mismo tiempo, después genera una barrera para que los subprocesos no puedan continuar con su ejecución hasta que todos hayan alcanzado cierto punto de ejecución, en ese momento ya pueden seguir al mismo tiempo sus tareas. 
@@ -93,7 +93,7 @@ Esta función libera el bloqueo de escritura. Recibe un puntero a un ReadWriteLo
 
 ## Uso
 
-Para usar la biblioteca debe descargar los archivos [sync_lib.o](sync_lib.o) y *sync_lib.h* de este repositorio. Cuando haga su programa,
+Para usar la biblioteca debe descargar los archivos [sync_lib.o](sync_lib.o) y [sync_lib.h](sync_lib.h) de este repositorio. Cuando haga su programa,
 debe incluir los archivos descargados en la misma carpeta donde vaya a compilar su programa. Además, debe incluir el encabezado
 de la biblioteca en los archivos donde la vaya a usar de la siguiente forma:
 
@@ -113,8 +113,8 @@ archivos de la biblioteca en la misma carpeta de su programa, pues el entorno de
 
 ## Ejemplos
 
-En el repositorio encontrará tres archivos (*barrier_example.c*, *semaphore_example.c*, *rwlock_example.c*), cada uno con un ejemplo de uso de una de las estructuras de la biblioteca. Para ejecutar los ejemplos deberá descargar los archivos de los ejemplos y los archivos *sync_lib.o* y *sync_lib.h*, 
-además del archivo *Makefile*. Todos estos archivos deben estar en una misma carpeta.
+En el repositorio encontrará tres archivos ([barrier_example.c](barrier_example.c), [semaphore_example.c](semaphore_example.c), 
+[rwlock_example.c](rwlock_example.c)), cada uno con un ejemplo de uso de una de las estructuras de la biblioteca. Para ejecutar los ejemplos deberá descargar los archivos de los ejemplos y los archivos [sync_lib.o](sync_lib.o) y [sync_lib.h](sync_lib.h), además del archivo [Makefile](Makefile). Todos estos archivos deben estar en una misma carpeta.
 
 Para ejecutar los ejemplos, abra una terminal en la carpeta y use los siguientes comandos para cada ejemplo:
 
