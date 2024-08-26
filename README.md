@@ -121,7 +121,7 @@ archivos de la biblioteca en la misma carpeta de su programa, pues el entorno de
 En el repositorio encontrará tres archivos ([barrier_example.c](barrier_example.c), [semaphore_example.c](semaphore_example.c), 
 [rwlock_example.c](rwlock_example.c)), cada uno con un ejemplo de uso de una de las estructuras de la biblioteca. Para ejecutar los ejemplos deberá descargar los archivos de los ejemplos y los archivos [sync_lib.o](sync_lib.o) y [sync_lib.h](sync_lib.h), además del archivo [Makefile](Makefile). Todos estos archivos deben estar en una misma carpeta.
 
-Para ejecutar los ejemplos, abra una terminal en la carpeta y use los siguientes comandos para cada ejemplo:
+Para ejecutar los ejemplos, abra una terminal de comandos en la carpeta y use los siguientes comandos para cada ejemplo:
 
 ### Barrera
 ```bash
@@ -140,3 +140,11 @@ make rwlock_example
 
 El *Makefile* se encarga de compilar el ejemplo, ejecutar el programa y limpiar los archivos creados tras finalizar la ejecución. Si inspecciona
 este archivo, podrá notar que los ejemplos se compilan de la misma forma en la que se explicó en este *readme*.
+
+Por último, puede encontrar un ejemplo de uso del mutex de la biblioteca *pthread*, para lo cual debe descargar el archivo [mutex_example.c](mutex_example.c) y el
+archivo [Makefile](Makefile). Ambos archivos deben estar en la misma carpeta. Para ejecutar el ejemplo, abra una termina de comandos en la carpeta y use el siguiente
+comando para ejecutar el ejemplo:
+
+```bash
+make mutex_example
+```
