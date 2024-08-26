@@ -1,6 +1,11 @@
 # Biblioteca de Sincronización de Hilos
 Este repositorio contiene la implementación de una biblioteca con herramientas para la sincronización de hilos en C.
 
+## Integrantes
+- Ariana Alvarado Molina.
+- María Paula Bolaños Apu.
+- Marco Herrera González.
+
 ## Tabla de Contenidos
 - [Requisitos](#requisitos)
 - [Herramientas](#herramientas)
