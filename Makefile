@@ -15,5 +15,10 @@ rwlock_example:
 	./rwlock_example_output
 	rm rwlock_example_output
 
+mutex_example:
+	gcc -o mutex_example mutex_example.c
+	./mutex_example
+	rm mutex_example
+	
 comp_sync_lib:
 	gcc -c sync_lib.c

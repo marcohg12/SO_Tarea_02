@@ -1,5 +1,6 @@
 #include <pthread.h>
 #include <stdio.h>
+#include <unistd.h>
 
 int money_in_account = 10000;
 pthread_mutex_t  mutex;
@@ -22,7 +23,7 @@ void *withdraw(void *arg) {
   return NULL;
 }
 
-void mutex_example() {
+int main() {
 
   pthread_t thread1, thread2;
   int amount1 = 10000, amount2 = 9000;
@@ -37,4 +38,6 @@ void mutex_example() {
   printf("Dinero en la cuenta: %d\n", money_in_account);
 
   pthread_mutex_destroy(&mutex);
+  
+  return 0;
 }
